@@ -1,0 +1,43 @@
+.clearfix {
+	clear:both;
+}
+
+html {
+	box-sizing: border-box;
+	color: #000;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+body {
+	position: relative;
+	font-weight: 400;
+	min-height: 100%;
+}
+
+h1 {
+	font-size: 28px;
+	font-size: 1.75rem;
+}
+
+h2 {
+	font-size: 24px;
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0px auto;
+}
+
+.shadowbox {
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 0;
+	background-color: hsla(255, 100%, 100%, .7);
+	z-index: 999;
+}

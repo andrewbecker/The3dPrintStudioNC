@@ -1,0 +1,468 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.clearfix {
+  clear: both;
+}
+
+html {
+  box-sizing: border-box;
+  color: #000;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+body {
+  position: relative;
+  font-weight: 400;
+  min-height: 100%;
+}
+
+h1 {
+  font-size: 28px;
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
+.shadowbox {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 999;
+}
+
+.header {
+  height: 60px;
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+.header a {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  font-size: 1em;
+}
+.header a:hover {
+  background-color: #DDD;
+}
+.header .logo img {
+  height: 60px;
+}
+.header .nav_left {
+  float: left;
+  height: 60px;
+}
+@media screen and (min-width: 701px) and (max-width: 999px) {
+  .header .nav_left {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .header .nav_left {
+    float: none;
+    display: block;
+    text-align: center;
+    margin-left: 0;
+  }
+}
+.header .nav_right {
+  float: right;
+  height: 60px;
+}
+.header .nav_right a {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media screen and (max-width: 700px) {
+  .header .nav_right {
+    float: none;
+    display: none;
+    height: 144px;
+  }
+  .header .nav_right a {
+    display: block;
+    line-height: 36px;
+    height: auto;
+    padding: 0;
+    text-align: center;
+  }
+}
+.header .nav_collapse {
+  display: none;
+}
+.header .nav_collapse i {
+  padding: 2px;
+  font-size: 30px;
+}
+.header .nav_collapse i:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 700px) {
+  .header .nav_collapse {
+    display: block;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+  }
+}
+
+.hero {
+  height: 498px;
+  width: 100%;
+  position: relative;
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+@media screen and (max-width: 600px) {
+  .hero {
+    height: 337px;
+  }
+}
+.hero .hero_overlay {
+  height: 100%;
+  width: 100%;
+  z-index: 101;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,000000+100&0.76+0,0.76+100 */
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.76) 0%, rgba(0, 0, 0, 0.76) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.76) 0%, rgba(0, 0, 0, 0.76) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.76) 0%, rgba(0, 0, 0, 0.76) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2ffffff', endColorstr='#c2000000',GradientType=0 );
+  /* IE6-9 */
+}
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  object-fit: fill;
+}
+.hero .hero_text {
+  color: white;
+  text-align: center;
+  padding-top: 236px;
+  font-size: 32px;
+  z-index: 102;
+}
+@media screen and (max-width: 600px) {
+  .hero .hero_text {
+    padding-top: 184px;
+  }
+}
+
+.section_background {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.photo_gallery {
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+.photo_gallery h2 {
+  text-align: center;
+}
+.photo_gallery .photos {
+  width: 100%;
+  height: 200px;
+}
+.photo_gallery .photos .arrow {
+  width: 100px;
+  height: 200px;
+  display: block;
+  float: left;
+  text-align: center;
+}
+.photo_gallery .photos .arrow i {
+  padding-top: 80px;
+  font-size: 40px;
+}
+.photo_gallery .photos .arrow i:hover {
+  color: #888;
+  cursor: pointer;
+}
+.photo_gallery .photos .photo_group {
+  position: relative;
+  display: block;
+  width: 80%;
+  height: 200px;
+  font-size: 0;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  float: left;
+  max-width: 800px !important;
+}
+.photo_gallery .photos .photo_group ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.photo_gallery .photos .photo {
+  box-sizing: border-box;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  display: inline-block;
+  border: 5px solid white;
+  overflow: hidden;
+}
+.photo_gallery .photos .photo img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+}
+.photo_gallery .photos .photo:last-child {
+  margin-right: 0%;
+}
+.photo_gallery .photos .photo:hover {
+  border: none;
+  cursor: pointer;
+}
+
+.etsy_shop {
+  padding-bottom: 2em;
+  padding-top: 2em;
+  text-align: center;
+}
+.etsy_shop .etsy_frame_container {
+  width: 100%;
+}
+.etsy_shop .etsy_small, .etsy_shop .etsy_medium, .etsy_shop .etsy_large {
+  display: none;
+}
+@media screen and (min-width: 800px) {
+  .etsy_shop .etsy_large {
+    display: block;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 799px) {
+  .etsy_shop .etsy_medium {
+    display: block;
+  }
+}
+@media screen and (max-width: 599px) {
+  .etsy_shop .etsy_small {
+    display: block;
+  }
+}
+.etsy_shop iframe {
+  width: 100%;
+}
+@media screen and (min-width: 800px) {
+  .etsy_shop iframe {
+    max-width: 750px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 799px) {
+  .etsy_shop iframe {
+    max-width: 563px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .etsy_shop iframe {
+    max-width: 375px;
+  }
+}
+
+.section_background {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.live_printing_background {
+  background-color: #ccc;
+}
+
+.live_printing {
+  width: 100%;
+}
+.live_printing h2 {
+  padding-top: 20px;
+  text-align: center;
+}
+.live_printing .video_container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.live_printing .video_container img {
+  width: 100%;
+}
+.live_printing .video_container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.live_printing .printer {
+  width: 49%;
+  margin-right: 2%;
+  float: left;
+  position: relative;
+}
+@media screen and (max-width: 600px) {
+  .live_printing .printer {
+    width: 98%;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-bottom: 20px;
+    display: block;
+  }
+}
+.live_printing .printer:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 600px) {
+  .live_printing .printer:last-child {
+    margin-bottom: 0px;
+  }
+}
+.live_printing .print_info {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  color: #FFF;
+}
+
+img[src="./action=stream"] {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  height: 80px;
+  margin: 0px auto;
+}
+footer .hub_btn {
+  color: white;
+  background-color: #f65555;
+  border-radius: 4px;
+  padding: 7px 12px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.photo_popout {
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  max-height: 600px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -300px;
+  margin-top: -300px;
+  background-color: white;
+  z-index: 10000;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #888;
+  display: none;
+}
+.photo_popout .photo_container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.photo_popout .photo_container img {
+  width: 100%;
+  height: 100%;
+}
+.photo_popout .photo_container .close_btn {
+  font-size: 20px;
+  position: absolute;
+  height: 15px;
+  top: -20px;
+  right: -15px;
+}
+.photo_popout .photo_container .close_btn:hover {
+  cursor: pointer;
+  color: #888;
+}

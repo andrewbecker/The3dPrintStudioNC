@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The 3D Printing Studio</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/vendor/font-awesome-4.6.3/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="shadowbox"></div>
+	<!-- Header/Nav -->
+	<header class="header">
+		<div class="container">
+			<div class="nav_left">
+				<a href="#" class="logo"><img src="images/logo-black.png"></a>
+			</div>
+			<div class="nav_collapse close"><i class="fa fa-bars" aria-hidden="true"></i></div>
+			<div class="nav_right">
+				<a href="#gallery">Gallery</a>
+				<a href="#printing">See What's Printing</a>
+				<a href="#shop">Shop</a>
+				<!-- <a href="#">Contact Us</a> -->
+			</div>
+		</div>
+	</header>
+
+	<!-- Hero -->
+	<div class="hero">
+		<div class="hero_overlay">
+			<div class="hero_text">
+				<span>From concept to form.</span>
+			</div>
+		</div>
+		<video autoplay loop>
+			<source src="videos/owl_timelapse.mp4" type="video/mp4">
+		</video>
+	</div>
+
+	<!-- Gallery -->
+	<div class="photo_gallery container">
+		<a name="gallery"></a>
+		<h2>Gallery</h2>
+
+		<div class="photos">
+			<div class="arrow arrow_left"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+			<div class="photo_group">
+				<ul>
+					<li class="photo">
+						<img src="images/photo_gallery/sm/bulbasaur_sm.jpg" alt="">
+					</li>
+					<li class="photo">
+						<img src="images/photo_gallery/sm/charmander_keyring_sm.jpg" alt="">
+					</li>
+					<li class="photo">
+						<img src="images/photo_gallery/sm/squirtle_sm.jpg" alt="">
+					</li>
+					<li class="photo">
+						<img src="images/photo_gallery/sm/metallic_planters_sm.jpg" alt="">
+					</li>
+					<li class="photo">
+						<img src="images/photo_gallery/sm/totodile_sm.jpg" alt="">
+					</li>
+					<!-- <li class="photo">
+						<img src="images/photo_gallery/IMG_1574.jpg" alt="">
+					</li>
+					<li class="photo">
+						<img src="images/photo_gallery/IMG_1575.jpg" alt="">
+					</li>
+					<li class="photo">
+						<img src="images/photo_gallery/IMG_1576.jpg" alt="">
+					</li> -->
+				</ul>
+			</div>
+			<div class="arrow arrow-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+
+	<!-- Live Printing -->
+	<div class="section_background live_printing_background">
+		<div class="live_printing container">
+			<a name="printing"></a>
+			<h2>See What's Printing</h2>
+			<div class="js-rostock printer">
+				<div class="video_container">
+					<img id="js-rostockcamera" src="http://octoprintrecipes.dyndns.org:8080/webcam/?action=stream">
+				</div>
+				<div class="print_info">
+					<span>Printer: Rostock Max V2</span><br/>
+				</div>
+			</div>
+			<div class="js-prusa printer">
+				<div class="video_container">
+					<img id="js-prusacamera" src="http://octoprintrecipes.dyndns.org:8081/webcam/?action=stream">
+				</div>
+				<div class="print_info">
+					<span>Printer: Prusa i3 MK2</span><br/>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+
+	<!-- Shop -->
+	<div class="etsy_shop container">
+		<a name="shop"></a>
+		<h2>Shop</h2>
+		<div class="etsy_frame_container">
+			<div class="etsy_small">
+				<script type='text/javascript' src='https://www.etsy.com/assets/js/etsy_mini_shop.js'></script><script type='text/javascript'>new Etsy.Mini(13155503,'gallery',2,5,1,'https://www.etsy.com');</script>
+			</div>
+			<div class="etsy_medium">
+				<script type='text/javascript' src='https://www.etsy.com/assets/js/etsy_mini_shop.js'></script><script type='text/javascript'>new Etsy.Mini(13155503,'gallery',3,5,1,'https://www.etsy.com');</script>
+			</div>
+			<div class="etsy_large">
+				<script type='text/javascript' src='https://www.etsy.com/assets/js/etsy_mini_shop.js'></script><script type='text/javascript'>new Etsy.Mini(13155503,'gallery',4,5,1,'https://www.etsy.com');</script>
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<!-- <a href="http://www.etsy.com/shop/The3DPrintStudio"><img width="80" height="80" src="images/etsy_badge.png"></a>
+		<a class="hub_btn" href="https://www.3dhubs.com/charlotte/hubs/andy">3D Hubs</a> -->
+	</footer>
+
+	<div class="photo_popout">
+		<div class="photo_container">
+			<i class="fa fa-times close_btn" aria-hidden="true"></i>
+			<img src="images/photo_gallery/IMG_1614.jpg" alt="">
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="components/js/script.js"></script>
+	<script src="components/js/photoGallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+.etsy_shop {
+	padding-bottom: 2em;
+	padding-top: 2em;
+	text-align: center;
+
+	.etsy_frame_container {
+		width: 100%;
+	}
+
+	.etsy_small, .etsy_medium, .etsy_large {
+		display: none;
+	}
+
+	@media screen and (min-width: 800px ) {
+		.etsy_large { display: block; }
+	}
+
+	@media screen and (min-width: 600px) and (max-width: 799px) {
+		.etsy_medium { display: block; }
+	}
+
+	@media screen and (max-width: 599px) {
+		.etsy_small { display: block; }
+	}
+
+	iframe {
+		width: 100%;
+
+		@media screen and (min-width: 800px ) {
+			max-width: 750px;
+		}
+
+		@media screen and (min-width: 600px) and (max-width: 799px) {
+			max-width: 563px;
+		}
+
+		@media screen and (max-width: 599px) {
+			max-width: 375px;
+		}
+
+	}
+
+}
