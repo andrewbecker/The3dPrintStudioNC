@@ -3,15 +3,13 @@
 	var photoGallery = {
 		
 		config: {
+			photoWidth: $('.photo_group .photo img').outerWidth(),
+			galleryWidth: $('.photo_group').outerWidth(),
+			maxMove: (Math.floor(this.galleryWidth/this.photoWidth)) * this.photoWidth
 		},
 
 		init: function() {
 			this.bindUI();
-
-			this.config.photoWidth = $('.photo_group .photo img').outerWidth();
-			this.config.galleryWidth = $('.photo_group').outerWidth();
-			this.config.maxMove = (Math.floor(this.config.galleryWidth/this.config.photoWidth)) * this.config.photoWidth;
-
 			this.update();
 		},
 
