@@ -37,7 +37,7 @@ $(window).resize(function() {
 // Etsy Script
 var setupEtsyShop = function() {
 	var width = window.innerWidth;
-	console.log(width);
+	// console.log(width);
 	$etsy_frame_container = $('.etsy_frame_container');
 
 	if (width < 600) {
